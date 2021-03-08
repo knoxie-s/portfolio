@@ -51,6 +51,36 @@ header {
 	background-color: #353247;
 }
 
+.btn {
+	border-radius: 1.5rem;
+	padding: .5rem 2rem;
+	font-size: 1.5rem;
+}
+
+.btn i {
+	margin-right: .8rem;
+	font-size: 1.5rem;
+	color: #D9D9D9;
+}
+
+.btn-submit {
+	background-color: #353247;
+	color: #B4B4B3;
+	/* transform: scale(1); */
+	transform: translateY(0);
+	transition: all .2s ease-in;
+}
+
+.btn-submit:hover {
+	/* transform: scale(0.9); */
+	transform: translateY(-3px);
+	box-shadow: 0px 4px 6px #2e2d41;
+	background-color: #3f3c54;
+}
+	
+
+
+
 /* -----------------------------HEADER----------------------------- */
 
 .navbar-brand {
@@ -276,4 +306,53 @@ header {
 
 .portfolio-item:hover .mask {
 	opacity: 0.9;
+}
+
+/* ---------------------------MY-SKILLS---------------------------  */
+
+
+.contact-info {
+	text-align: left;
+	margin-bottom: 3.3rem;
+}
+
+.contact-info i {
+	float: left;
+	font-size: 2.5rem;
+	color: #465FCF;
+}
+
+.contact-info .details {
+	margin-left: 4rem;
+}
+
+.contact-info .details h5 {
+	color: #B4B4B3;
+	font-size: 1.6rem;
+}
+
+.contact-info .details p {
+	color: #D9D9D9;
+	font-size: 1.4rem;
+}
+
+.contact-form {
+	text-align: left;
+}
+
+.form-control {
+	/* display: block; */
+	/* width: 100%; */
+	height: 2.5rem;
+	border-radius: 1.5rem;
+	padding: .4rem 1.6rem;
+	font-size: 1.1rem;
+}
+
+textarea.form-control {
+	height: auto;
+}
+
+.form-group {
+	margin-bottom: 2.5rem;
 }
