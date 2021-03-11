@@ -1,5 +1,9 @@
 /*-------------------------GENERAL-STYLES-------------------------*/
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	text-align: center;
 	color: #F4F4F4;
@@ -20,6 +24,15 @@ h1, h2 {
 	text-transform: uppercase;
 	color: rgb(122,154,221);
 	filter: drop-shadow(rgba(8, 56, 157, 0.95) 0px 0px 2.29233px) drop-shadow(rgba(30, 71, 157, 0.75) 0px 0px 11.4617px) drop-shadow(rgba(30, 71, 157, 0.44) 0px 0px 34.385px);
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 }
 
 header {
@@ -101,6 +114,88 @@ footer.container-fluid {
 }
 
 
+/* -----------------------------SIDEBAR----------------------------- */
+
+.sidebar {
+	position: fixed;
+	height: 100%;
+	width: 31%;
+	background-color: #1D1B27;
+	right: -100%;
+	top: 0;
+	z-index: 100;
+	transition: all 0.8s ease 0s;
+	padding: 3.5rem 0;
+}
+
+.sidebar {
+	color: #D9D9D9;
+}
+
+.sidebar .close-btn {
+	position: absolute;
+	color: #B4B4B3;
+	font-size: 1.55rem;
+	left: 1rem;
+	top: .4rem;
+}
+
+.sidebar .logo img {
+	width: 9rem;
+	height: 9rem;
+	border-radius: 50%;
+	margin-bottom: 2rem;
+}
+
+.sidebar .logo h3 {
+    margin-bottom: .7rem;
+}
+
+
+.sidebar .owner {
+	position: absolute;
+	width: 100%;
+	bottom: 1rem;
+	font-size: 1rem;
+}
+
+.slide-right {
+	right: 0;
+	transition: all 0.4s ease 0s;
+}
+
+.expand-sidebar {
+	color: #D9D9D9;
+}
+
+.menu {
+	margin-top: 2.5rem;
+}
+
+.menu ul li a {
+	border-top: 1px solid #353247;
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 1.4rem;
+	padding: .45rem 0;
+	transition: all 0.3s ease-out 0s;
+}
+
+.menu ul li a.active {
+	background-color: #ffbf3b;
+	color: black;
+}
+
+.menu ul li a:hover {
+	background-color: #ffbf3b;
+	color: black;
+}
+
+.menu ul li:last-child a {
+	border-bottom: 1px solid #353247;
+}
+
 /* -----------------------------HEADER----------------------------- */
 
 .navbar-brand {
@@ -149,6 +244,10 @@ footer.container-fluid {
 }
 
 /* -----------------------------ABOUT-ME----------------------------- */
+
+#about {
+	transition: all 1s ease;
+}
 
 .p3x4 {
 	width: 100%;

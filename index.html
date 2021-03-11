@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	<header>
+	<header id="home">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg">
 				<a class="navbar-brand" href="#">DEPT</a>
@@ -50,8 +50,33 @@
 			</nav>
 			<h1 class="h-intro">I am developer</h1>
 		</div>
+		<div class="expand-sidebar">
+			<i class="fas fa-bars"></i>
+		</div>
+		<div class="sidebar">
+			<div class="close-btn">
+				<i class="far fa-times-circle"></i>
+			</div>
+			<div class="logo">
+				<img src="./images/3x4.png" alt="">
+				<h3>Ermatov Suhail</h3>
+				<h5>Web Developer</h5>
+			</div>
+			<nav class="menu">
+				<ul>
+					<li><a class=" active" href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="owner">
+				<span>2021 Dept Portfolio</span>
+			</div>
+		</div>
 	</header>
-	<section class="bgcolor1 container-fluid">
+	<section class="bgcolor1 container-fluid" id="about">
 		<h2>About me</h2>
 		<div class="row">
 			<div class="col-lg-5">
@@ -143,7 +168,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="bgcolor1 container-fluid">
+	<section class="bgcolor1 container-fluid" id="services">
 		<h2>my Services</h2>
 		<div class="row services">
 			<div class="col-lg-4 col-md-6 services-block">
@@ -190,7 +215,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="bgcolor2 container-fluid">
+	<section class="bgcolor2 container-fluid" id="portfolio">
 		<h2>Check out my works</h2>
 		<div class="row portfolio">
 			<!-- <img src="./images/hotel1.png" alt="hotel service">
@@ -279,7 +304,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="bgcolor1 container-fluid">
+	<section class="bgcolor1 container-fluid" id="contact">
 		<h2>Get in touch</h2>
 		<div class="row ">
 			<div class="col-md-4">
@@ -341,6 +366,7 @@
 		<h2>Dept</h2>
 		<span>Copyrights © 2021. All Rights Reserved</span>
 	</footer>
+	<script src="index.js"></script>
 </body>
 
 </html>
