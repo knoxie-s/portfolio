@@ -22,36 +22,27 @@
 
 <body>
 	<header id="home">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="#">DEPT</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Services</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Portfolio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
-					</ul>
+		<div class="container mainmenu">
+			<div class="row">
+				<div class="col-md-3">
+					<a class="logo" href="#">DEPT</a>
 				</div>
-			</nav>
+				<div class="col-md-9 d-none d-lg-block">
+					<nav class="float-right">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="expand-sidebar d-lg-none">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
 			<h1 class="h-intro">I am developer</h1>
-		</div>
-		<div class="expand-sidebar">
-			<i class="fas fa-bars"></i>
 		</div>
 		<div class="sidebar">
 			<div class="close-btn">
@@ -59,7 +50,7 @@
 			</div>
 			<div class="logo">
 				<img src="./images/3x4.png" alt="">
-				<h3>Ermatov Suhail</h3>
+				<h3>Suhail Ermatov</h3>
 				<h5>Web Developer</h5>
 			</div>
 			<nav class="menu">

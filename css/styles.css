@@ -135,9 +135,15 @@ footer.container-fluid {
 .sidebar .close-btn {
 	position: absolute;
 	color: #B4B4B3;
-	font-size: 1.55rem;
+	font-size: 1.75rem;
+	cursor: pointer;
 	left: 1rem;
 	top: .4rem;
+	transition: all .2s ease;
+}
+
+.sidebar .close-btn:hover {
+	color: #D9D9D9;
 }
 
 .sidebar .logo img {
@@ -151,7 +157,6 @@ footer.container-fluid {
     margin-bottom: .7rem;
 }
 
-
 .sidebar .owner {
 	position: absolute;
 	width: 100%;
@@ -162,10 +167,6 @@ footer.container-fluid {
 .slide-right {
 	right: 0;
 	transition: all 0.4s ease 0s;
-}
-
-.expand-sidebar {
-	color: #D9D9D9;
 }
 
 .menu {
@@ -198,41 +199,56 @@ footer.container-fluid {
 
 /* -----------------------------HEADER----------------------------- */
 
-.navbar-brand {
-	font-family: 'Big Shoulders Display', cursive;
+.mainmenu {
+	position: relative;
+}
+
+.mainmenu .logo {
+	font-size: 3rem;
+	font-family: 'big shoulders display', cursive;
 	font-size: 3rem;
 	font-weight: 700;
 	color: rgb(122,154,221);
 	filter: drop-shadow(rgba(8, 56, 157, 0.95) 0px 0px 2.29233px) drop-shadow(rgba(30, 71, 157, 0.75) 0px 0px 11.4617px) drop-shadow(rgba(30, 71, 157, 0.44) 0px 0px 34.385px);
 }
 
-.nav-link {
-	font-size: 1.2rem;
-	color: #D9D9D9;
+.mainmenu nav {
+	padding: 1.6rem 0;
 }
 
-.nav-link:hover {
-	color: inherit;
-}
-
-.nav-item {
-	margin-right: 1rem;
-	color: #D9D9D9;
+.mainmenu nav li {
+	float: left;
+	margin: 0 1rem;
 	position: relative;
 }
 
-.nav-item::after {
+.mainmenu nav li a {
+	font-size: 1.2rem;
+	color: #D9D9D9;
+	text-decoration: none;
+}
+
+.mainmenu .expand-sidebar {
+	color: #D9D9D9;
+	position: absolute;
+	cursor: pointer;
+	top: 1.6rem;
+	right: 2rem;
+	font-size: 1.5rem;
+}
+
+.mainmenu nav li::after {
 	content: "";
 	background: #D9D9D9;
 	position: absolute;
-	bottom: 0;
+	bottom: -5px;
 	left: 0;
 	height: 3px;
 	width: 0;
 	transition: width .3s;
 }
 
-.nav-item:hover::after {
+.mainmenu nav li:hover::after {
 	width: 100%;
 }
 
