@@ -352,7 +352,7 @@ footer.container-fluid {
 	padding-right: 1rem;
 }
 
-/* ---------------------------MY-SKILLS---------------------------  */
+/* ---------------------------SERVICES---------------------------  */
 
 .portfolio-item {
 	position: relative;
@@ -639,8 +639,31 @@ textarea.form-control {
 		height: 6px;
 	}
 
-/*-------------------------MY-SKILLS-------------------------*/
 /*-------------------------SERVICES-------------------------*/
+
+	.services-item {
+		padding-bottom: 1rem;
+		padding-top: 1.5rem;
+	}
+
+	.services-item i {
+		font-size: 3rem;
+	}
+
+	.services-item h3 {
+		font-size: 1.6rem;
+	}
+	
+	.services-item i, h3, p {
+		margin-bottom: 1.2rem;
+	}
+
+	.services-item p {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		font-size: 1.1rem;
+	}
+
 /*-------------------------PORTFOLIO-------------------------*/ 
 }
 
