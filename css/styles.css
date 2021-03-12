@@ -274,7 +274,6 @@ footer.container-fluid {
 	text-align: left;
 	padding-top: 2rem;
 	padding-bottom: 2.5rem;
-	font-size: 1.2rem;
 	/* width: 300px; */
 }
 
@@ -493,6 +492,36 @@ textarea.form-control {
 /* ==========================MEDIA-QUERIES==========================  */
 
 @media only screen and (min-width: 320px) {
+
+/*-------------------------GENERAL-STYLES-------------------------*/
+
+	/* .container-fluid {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	} */
+
+/*-------------------------SIDEBAR-------------------------*/
+
+	 /* .sidebar {
+    	width: 50%;
+		font-size: 12px;
+    }
+
+	.sidebar .logo h3 {
+		font-size: 1.8em;
+	}
+
+	.sidebar .logo h5 {
+		font-size: 1.4em;
+	} */
+
+/*-------------------------HEADER-------------------------*/
+
+	/* h2 {
+		margin-bottom: 1rem;
+		font-size: 1.8rem;
+	}
+
     .mainmenu {
     	padding-left: 3rem;
     	padding-right: 3rem;
@@ -510,30 +539,15 @@ textarea.form-control {
 
 	 .h-intro {
     	font-size: 2rem;
-    }
+    } */
 
-	 .sidebar {
-    	width: 50%;
-		font-size: 12px;
-    }
+/* -----------------------------ABOUT-ME----------------------------- */
 
-	.sidebar .logo h3 {
-		font-size: 1.8em;
-	}
 
-	.sidebar .logo h5 {
-		font-size: 1.4em;
-	}
-
-	.container-fluid {
-		padding-left: 4rem;
-		padding-right: 4rem;
-	}
-	
 }
 
 @media only screen and (min-width: 576px) {
-    .mainmenu {
+    /* .mainmenu {
     	padding-left: 5rem;
     	padding-right: 5rem;
     }	 
@@ -557,20 +571,61 @@ textarea.form-control {
 
 	.sidebar .logo h5 {
 		font-size: 1.8em;
-	}
+	} */
 }
 
 @media only screen and (min-width: 768px) {
+
+/*-------------------------GENERAL-STYLES-------------------------*/
+
+	.container-fluid {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		padding-bottom: 3rem;
+	}
+	
+	body {
+		font-size: 15px;
+	}
+
+	h2 {
+		margin-bottom: 2rem;
+	}
+
+/*-------------------------HEADER-------------------------*/ 
+
     .mainmenu {
-    	padding-left: 8rem;
-    	padding-right: 8rem;
-    }	 
+    	padding-left: 5rem;
+    	padding-right: 5rem;
+    }
 
     .mainmenu .expand-sidebar {
     	right: 4rem;
     }
 
+/*-------------------------SIDEBAR-------------------------*/
+
 	.sidebar {
     	width: 40%;
     }
+
+/*-------------------------ABOUT-ME-------------------------*/
+
+	.about-info {
+		padding-top: 1rem;
+		padding-bottom: 1.5rem;
+	}
+    
+
+/*-------------------------MY-SKILLS-------------------------*/
+/*-------------------------SERVICES-------------------------*/
+/*-------------------------PORTFOLIO-------------------------*/ 
 }
+
+/*-------------------------GENERAL-STYLES-------------------------*/
+/*-------------------------SIDEBAR-------------------------*/
+/*-------------------------HEADER-------------------------*/ 
+ /*-------------------------ABOUT-ME-------------------------*/
+/*-------------------------MY-SKILLS-------------------------*/
+/*-------------------------SERVICES-------------------------*/
+/*-------------------------PORTFOLIO-------------------------*/ 
