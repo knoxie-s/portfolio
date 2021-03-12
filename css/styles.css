@@ -284,18 +284,20 @@ footer.container-fluid {
 /* ---------------------------MY-SKILLS--------------------------- */ 
 
 .skill {
-	text-align: left;
-	padding-right: 5rem;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	color: #B4B4B3;
 	text-transform: uppercase;
+}
+
+.skill-details {
+	text-align: left;
 }
 
 .skill-item {
 	font-size: 1.3rem;
 	margin-bottom: 3rem;
-}
-
-.skill-item-name {
 }
 
 .skill-item-progress {
@@ -574,7 +576,7 @@ textarea.form-control {
 	} */
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 992px) {
 
 /*-------------------------GENERAL-STYLES-------------------------*/
 
@@ -590,6 +592,7 @@ textarea.form-control {
 
 	h2 {
 		margin-bottom: 2rem;
+		font-size: 1.7rem;
 	}
 
 /*-------------------------HEADER-------------------------*/ 
@@ -603,6 +606,10 @@ textarea.form-control {
     	right: 4rem;
     }
 
+	.h-intro {
+		font-size: 2.5rem;
+	}
+
 /*-------------------------SIDEBAR-------------------------*/
 
 	.sidebar {
@@ -615,7 +622,22 @@ textarea.form-control {
 		padding-top: 1rem;
 		padding-bottom: 1.5rem;
 	}
+
+/*-------------------------MY-SKILLS-------------------------*/ 
     
+	.skill {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.skill-item {
+		font-size: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.skill-item-bar {
+		height: 6px;
+	}
 
 /*-------------------------MY-SKILLS-------------------------*/
 /*-------------------------SERVICES-------------------------*/
