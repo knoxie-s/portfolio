@@ -319,7 +319,7 @@ footer.container-fluid {
 	border-radius: inherit;
 }
 
-/* ---------------------------MY-SKILLS---------------------------  */
+/* ---------------------------SERVICES---------------------------  */
 
 .services-block {
 	/* padding-right: 1rem; */
@@ -352,7 +352,7 @@ footer.container-fluid {
 	padding-right: 1rem;
 }
 
-/* ---------------------------SERVICES---------------------------  */
+/* ---------------------------PORTFOLIO---------------------------  */
 
 .portfolio-item {
 	position: relative;
@@ -442,8 +442,7 @@ footer.container-fluid {
 	opacity: 0.9;
 }
 
-/* ---------------------------MY-SKILLS---------------------------  */
-
+/* ---------------------------CONTACT---------------------------  */
 
 .contact-info {
 	text-align: left;
@@ -595,6 +594,15 @@ textarea.form-control {
 		font-size: 1.7rem;
 	}
 
+	.btn {
+		padding: .5rem 1.2rem;
+		font-size: 1.2rem;
+	}
+
+	.btn i {
+		font-size: 1.2rem;
+	}
+
 /*-------------------------HEADER-------------------------*/ 
 
     .mainmenu {
@@ -665,6 +673,39 @@ textarea.form-control {
 	}
 
 /*-------------------------PORTFOLIO-------------------------*/ 
+
+
+
+/*-------------------------CONTACT-------------------------*/ 
+
+	.contact-info {
+		margin-bottom: 3.3rem;
+	}
+
+	.contact-info i {
+		font-size: 1.8rem;
+	}
+
+	.contact-info .details {
+		margin-left: 2.5rem;
+	}
+
+	.contact-info .details h5 {
+		font-size: 1.4rem;
+	}
+
+	.contact-info .details p {
+		font-size: 1.1rem;
+	}
+
+	.form-control {
+		height: 2.5rem;
+	}
+
+	.form-group {
+		margin-bottom: 1.7rem;
+	}
+
 }
 
 /*-------------------------GENERAL-STYLES-------------------------*/
