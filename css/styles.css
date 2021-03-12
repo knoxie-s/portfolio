@@ -708,10 +708,141 @@ textarea.form-control {
 
 }
 
+@media only screen and (max-width: 768px) {
+
 /*-------------------------GENERAL-STYLES-------------------------*/
-/*-------------------------SIDEBAR-------------------------*/
+
+	.container-fluid {
+		padding-top: 1.3rem;
+		padding-left: 7rem;
+		padding-right: 7rem;
+		padding-bottom: 2rem;
+	}
+	
+	body {
+		font-size: 13px;
+	}
+
+	h2 {
+		margin-bottom: 1.8rem;
+		font-size: 1.4rem;
+	}
+
+	.btn {
+		font-size: 1rem;
+	}
+
+	.btn i {
+		font-size: 1rem;
+	}
+
 /*-------------------------HEADER-------------------------*/ 
- /*-------------------------ABOUT-ME-------------------------*/
-/*-------------------------MY-SKILLS-------------------------*/
+
+    .mainmenu {
+    	padding-left: 4rem;
+    	padding-right: 4rem;
+    }
+
+    .mainmenu .expand-sidebar {
+    	right: 3rem;
+		top: 1rem;
+    }
+
+	.mainmenu .logo a {
+		font-size: 2.5rem;
+	}
+
+	.h-intro {
+		font-size: 2.2rem;
+	}
+
+/*-------------------------SIDEBAR-------------------------*/
+
+	.sidebar {
+    	width: 45%;
+		font-size: 14px;
+    }
+
+/*-------------------------ABOUT-ME-------------------------*/
+
+	/* .about-info {
+		padding-top: 1rem;
+		padding-bottom: 1.5rem;
+	} */
+
+/*-------------------------MY-SKILLS-------------------------*/ 
+    
+	/* .skill {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.skill-item {
+		font-size: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.skill-item-bar {
+		height: 6px;
+	} */
+
 /*-------------------------SERVICES-------------------------*/
+
+	/* .services-item {
+		padding-bottom: 1rem;
+		padding-top: 1.5rem;
+	}
+
+	.services-item i {
+		font-size: 3rem;
+	}
+
+	.services-item h3 {
+		font-size: 1.6rem;
+	}
+	
+	.services-item i, h3, p {
+		margin-bottom: 1.2rem;
+	}
+
+	.services-item p {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		font-size: 1.1rem;
+	} */
+
 /*-------------------------PORTFOLIO-------------------------*/ 
+
+
+
+/*-------------------------CONTACT-------------------------*/ 
+
+	/* .contact-info {
+		margin-bottom: 3.3rem;
+	}
+
+	.contact-info i {
+		font-size: 1.8rem;
+	}
+
+	.contact-info .details {
+		margin-left: 2.5rem;
+	}
+
+	.contact-info .details h5 {
+		font-size: 1.4rem;
+	}
+
+	.contact-info .details p {
+		font-size: 1.1rem;
+	}
+
+	.form-control {
+		height: 2.5rem;
+	}
+
+	.form-group {
+		margin-bottom: 1.7rem;
+	} */
+
+}
