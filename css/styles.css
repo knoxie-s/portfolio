@@ -492,7 +492,7 @@ textarea.form-control {
 
 /* ==========================MEDIA-QUERIES==========================  */
 
-@media only screen and (min-width: 320px) {
+/* @media only screen and (min-width: 320px) { */
 
 /*-------------------------GENERAL-STYLES-------------------------*/
 
@@ -545,35 +545,7 @@ textarea.form-control {
 /* -----------------------------ABOUT-ME----------------------------- */
 
 
-}
-
-@media only screen and (min-width: 576px) {
-    /* .mainmenu {
-    	padding-left: 5rem;
-    	padding-right: 5rem;
-    }	 
-
-    .mainmenu .expand-sidebar {
-    	right: 4rem;
-    }
-
-	 .h-intro {
-    	font-size: 2.8rem;
-    }
-
-	 .sidebar {
-    	width: 50%;
-		font-size: 16px;
-    }
-
-	.sidebar .logo h3 {
-		font-size: 2.3em;
-	}
-
-	.sidebar .logo h5 {
-		font-size: 1.8em;
-	} */
-}
+/* } */
 
 @media only screen and (max-width: 992px) {
 
@@ -813,8 +785,8 @@ textarea.form-control {
 /*-------------------------CONTACT-------------------------*/ 
 
 	#contact.container-fluid {
-		padding-left: 7rem;
-		padding-right: 7rem;
+		padding-left: 5rem;
+		padding-right: 5rem;
 	}
 
 	.contact-form, .contact-info {
@@ -847,4 +819,85 @@ textarea.form-control {
 		margin-bottom: 10px;
 	}
 
+}
+
+@media only screen and (max-width: 576px) {
+
+	/*-------------------------GENERAL-STYLES-------------------------*/
+	
+		.container-fluid {
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+			padding-bottom: 2rem;
+		}
+		
+		body {
+			font-size: 10px;
+		}
+	
+		h2 {
+			font-size: 1.3rem;
+		}
+	
+	/*-------------------------HEADER-------------------------*/ 
+	
+		.mainmenu {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+	
+		.mainmenu .expand-sidebar {
+			right: 2rem;
+		}
+	
+		.h-intro {
+			font-size: 2.1rem;
+		}
+	
+	/*-------------------------SIDEBAR-------------------------*/
+
+		.sidebar {
+			width: 50%;
+			font-size: 12px;
+		}
+
+		.sidebar .logo h3 {
+			font-size: 1.8em;
+		} 
+		
+		.sidebar .logo h5 {
+			font-size: 1.4em;
+		}
+	
+	/*-------------------------ABOUT-ME-------------------------*/
+	
+		#about .img-div {
+			margin-bottom: 1.5rem;
+			height: 15rem;
+		}
+
+		.about-info {
+			font-size: 1rem;
+		}
+	
+	
+	/*-------------------------MY-SKILLS-------------------------*/ 
+		
+		
+	
+	/*-------------------------SERVICES-------------------------*/
+	
+		
+	
+	/*-------------------------PORTFOLIO-------------------------*/ 
+	
+		
+	
+	/*-------------------------CONTACT-------------------------*/ 
+		
+		#contact.container-fluid {
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+	
 }
