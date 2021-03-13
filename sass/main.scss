@@ -1,1 +1,11 @@
 // DEVELOPING PROJECT WITH SASS
+
+.header {
+	background-color: darkorange;
+	height: 10rem;
+
+	&__paragraph {
+		background-color: darkslategray;
+	}
+
+}
