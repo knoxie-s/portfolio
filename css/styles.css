@@ -596,6 +596,10 @@ textarea.form-control {
     	width: 40%;
     }
 
+	.sidebar .logo img {
+		font-size: 1.2rem;
+	}
+
 /*-------------------------ABOUT-ME-------------------------*/
 
 	/* .about-info {
@@ -862,7 +866,7 @@ textarea.form-control {
 	/*-------------------------SIDEBAR-------------------------*/
 
 		.sidebar {
-			width: 50%;
+			width: 65%;
 			font-size: 12px;
 		}
 
@@ -873,7 +877,9 @@ textarea.form-control {
 		.sidebar .logo h5 {
 			font-size: 1.4em;
 		}
-	
+		
+		
+
 	/*-------------------------ABOUT-ME-------------------------*/
 	
 		#about .img-div {
