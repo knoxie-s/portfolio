@@ -22,30 +22,33 @@
 
 <body>
 	<header id="home">
-		<div class="mainmenu">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="logo">
-						<a href="#">DEPT</a>
+		<div class="container">
+			<div class="mainmenu">
+				<div class="row">
+					<div class="col-3">
+						<div class="logo">
+							<a href="#">DEPT</a>
+						</div>
+					</div>
+					<div class="col-md-9 d-none d-lg-block">
+						<nav class="float-right">
+							<ul>
+								<li><a href="#home">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#services">Services</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-9 expand-sidebar d-lg-none">
+						<i class="fas fa-bars"></i>
 					</div>
 				</div>
-				<div class="col-md-9 d-none d-lg-block">
-					<nav class="float-right">
-						<ul>
-							<li><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#services">Services</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="expand-sidebar d-lg-none">
-					<i class="fas fa-bars"></i>
-				</div>
+				<h1 class="h-intro">I am developer</h1>
 			</div>
-			<h1 class="h-intro">I am developer</h1>
 		</div>
+		
 		<div class="sidebar">
 			<div class="close-btn">
 				<i class="far fa-times-circle"></i>
@@ -69,315 +72,331 @@
 			</div>
 		</div>
 	</header>
-	<section class="bgcolor1 container-fluid" id="about">
-		<h2>About me</h2>
-		<div class="row">
-			<div class="col-sm-5 img-div">
-				<img class="p3x4" src="./images/3x4.png" alt="3x4">
-			</div>
-			<div class="col-sm-7 about-info bgcolor2">
-				<p class="me">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt quibusdam nisi
-					sapiente quasi saepe, amet autem rerum obcaecati repudiandae eaque adipisci. Accusantium eos
-					itaque minus iste atque veritatis.  Impedit, excepturi aperiam sit officia ullam itaque nulla non fugiat
-					quas at iste doloribus recusandae quaerat, alias praesentium molestias.</p>
-				<div class="row">
-					<div class="col-md-6">
-						<p> <span class="about-info-list">Name:</span> Suhail Ermatov</p>
-					</div>
-					<div class="col-md-6">
-						<p> <span class="about-info-list">Email:</span> silent-s@inbox.ru</p>
-					</div>
-					<div class="col-md-6">
-						<p> <span class="about-info-list">Age:</span> 23</p>
-					</div>
-					<div class="col-md-6">
-						<p> <span class="about-info-list">Location:</span> Tajikistan, Dushanbe</p>
+	<section class="bgcolor1" id="about">
+		<div class="container">
+			<h2>About me</h2>
+			<div class="row">
+				<div class="col-md-5 img-div">
+					<img class="p3x4" src="./images/3x4.png" alt="3x4">
+				</div>
+				<div class="col-md-7">
+					<div class="about-info bgcolor2">
+						<p class="me">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt
+							quibusdam
+							nisi
+							sapiente quasi saepe, amet autem rerum obcaecati repudiandae eaque adipisci. Accusantium eos
+							itaque minus iste atque veritatis. Impedit, excepturi aperiam sit officia ullam itaque nulla non
+							fugiat
+							quas at iste doloribus recusandae quaerat, alias praesentium molestias.</p>
+						<div class="row">
+							<div class="col-md-6">
+								<p> <span class="about-info-list">Name:</span> Suhail Ermatov</p>
+							</div>
+							<div class="col-md-6">
+								<p> <span class="about-info-list">Email:</span> silent-s@inbox.ru</p>
+							</div>
+							<div class="col-md-6">
+								<p> <span class="about-info-list">Age:</span> 23</p>
+							</div>
+							<div class="col-md-6">
+								<p> <span class="about-info-list">Location:</span> Tajikistan, Dushanbe</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="bgcolor2 container-fluid">
-		<h2>My skills</h2>
-		<div class="row">
-			<div class="col-sm-6 skill">
-				<div class="skill-item">
-					<div class="skill-details">
-						<span class="skill-item-name">HTML&CSS</span>
-						<span class="skill-item-progress">85%</span>
+	<section class="bgcolor2">
+		<div class="container">
+			<h2>My skills</h2>
+			<div class="row">
+				<div class="col-sm-6 skill">
+					<div class="skill-item">
+						<div class="skill-details">
+							<span class="skill-item-name">HTML&CSS</span>
+							<span class="skill-item-progress">85%</span>
+						</div>
+						<div class="skill-item-bar">
+							<div class="skill-item-bar-progress"></div>
+						</div>
 					</div>
-					<div class="skill-item-bar">
-						<div class="skill-item-bar-progress"></div>
-					</div>
-				</div>
-				<div class="skill-item">
-					<div class="skill-details">
-						<span class="skill-item-name">Javascript</span>
-						<span class="skill-item-progress">85%</span>
+					<div class="skill-item">
+						<div class="skill-details">
+							<span class="skill-item-name">Javascript</span>
+							<span class="skill-item-progress">85%</span>
 
+						</div>
+						<div class="skill-item-bar">
+							<div class="skill-item-bar-progress"></div>
+						</div>
 					</div>
-					<div class="skill-item-bar">
-						<div class="skill-item-bar-progress"></div>
-					</div>
-				</div>
-				<div class="skill-item">
-					<div class="skill-details">
-						<span class="skill-item-name">bootstrap</span>
-						<span class="skill-item-progress">85%</span>
+					<div class="skill-item">
+						<div class="skill-details">
+							<span class="skill-item-name">bootstrap</span>
+							<span class="skill-item-progress">85%</span>
 
+						</div>
+						<div class="skill-item-bar">
+							<div class="skill-item-bar-progress"></div>
+						</div>
 					</div>
-					<div class="skill-item-bar">
-						<div class="skill-item-bar-progress"></div>
-					</div>
-				</div>
-				<div class="skill-item">
-					<div class="skill-details">
-						<span class="skill-item-name">jquery</span>
-						<span class="skill-item-progress">85%</span>
+					<div class="skill-item">
+						<div class="skill-details">
+							<span class="skill-item-name">jquery</span>
+							<span class="skill-item-progress">85%</span>
 
+						</div>
+						<div class="skill-item-bar">
+							<div class="skill-item-bar-progress"></div>
+						</div>
 					</div>
-					<div class="skill-item-bar">
-						<div class="skill-item-bar-progress"></div>
-					</div>
+					<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iusto, eum aliquid praesentium id deserunt tempora aliquam provident incidunt obcaecati eveniet veniam labore ipsam quae dolor doloribus, veritatis delectus nesciunt. -->
 				</div>
-				<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iusto, eum aliquid praesentium id deserunt tempora aliquam provident incidunt obcaecati eveniet veniam labore ipsam quae dolor doloribus, veritatis delectus nesciunt. -->
-			</div>
-			<div class="col-sm-6 skill">
-				<div class="skill-item">
-					<div class="skill-details">
-						<span class="skill-item-name">NODE.JS</span>
-						<span class="skill-item-progress">70%</span>
+				<div class="col-sm-6 skill">
+					<div class="skill-item">
+						<div class="skill-details">
+							<span class="skill-item-name">NODE.JS</span>
+							<span class="skill-item-progress">70%</span>
 
+						</div>
+						<div class="skill-item-bar">
+							<div class="skill-item-bar-progress"></div>
+						</div>
 					</div>
-					<div class="skill-item-bar">
-						<div class="skill-item-bar-progress"></div>
-					</div>
-				</div>
-				<div class="skill-item">
-					<div class="skill-details">
-						<span class="skill-item-name">express.js</span>
-						<span class="skill-item-progress">70%</span>
+					<div class="skill-item">
+						<div class="skill-details">
+							<span class="skill-item-name">express.js</span>
+							<span class="skill-item-progress">70%</span>
 
+						</div>
+						<div class="skill-item-bar">
+							<div class="skill-item-bar-progress"></div>
+						</div>
 					</div>
-					<div class="skill-item-bar">
-						<div class="skill-item-bar-progress"></div>
-					</div>
-				</div>
-				<div class="skill-item">
-					<div class="skill-details">
-						<span class="skill-item-name">sql</span>
-						<span class="skill-item-progress">70%</span>
+					<div class="skill-item">
+						<div class="skill-details">
+							<span class="skill-item-name">sql</span>
+							<span class="skill-item-progress">70%</span>
 
+						</div>
+						<div class="skill-item-bar">
+							<div class="skill-item-bar-progress"></div>
+						</div>
 					</div>
-					<div class="skill-item-bar">
-						<div class="skill-item-bar-progress"></div>
-					</div>
-				</div>
-				<div class="skill-item">
-					<div class="skill-details">
-						<span class="skill-item-name">mongodb</span>
-						<span class="skill-item-progress">70%</span>
+					<div class="skill-item">
+						<div class="skill-details">
+							<span class="skill-item-name">mongodb</span>
+							<span class="skill-item-progress">70%</span>
 
+						</div>
+						<div class="skill-item-bar">
+							<div class="skill-item-bar-progress"></div>
+						</div>
 					</div>
-					<div class="skill-item-bar">
-						<div class="skill-item-bar-progress"></div>
-					</div>
-				</div>
-				<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga perspiciatis laboriosam doloribus ex possimus? Alias amet deserunt illum mollitia, vero similique sint ipsam, commodi reprehenderit hic numquam eveniet exercitationem quasi? -->
-			</div>
-		</div>
-	</section>
-	<section class="bgcolor1 container-fluid" id="services">
-		<h2>my Services</h2>
-		<div class="row services">
-			<div class="col-lg-4 col-sm-6 services-block">
-				<div class="services-item">
-					<i class="fas fa-file-code"></i>
-					<h3>Development</h3>
-					<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 services-block">
-				<div class="services-item">
-					<i class="fas fa-poll"></i>
-					<h3>Marketing</h3>
-					<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 services-block">
-				<div class="services-item">
-					<i class="fas fa-question-circle"></i>
-					<h3>Support</h3>
-					<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 services-block">
-				<div class="services-item">
-					<i class="fas fa-snowboarding"></i>
-					<h3>Branding</h3>
-					<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 services-block">
-				<div class="services-item">
-					<i class="fas fa-pencil-ruler"></i>
-					<h3>Design</h3>
-					<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 services-block">
-				<div class="services-item">
-					<i class="fas fa-keyboard"></i>
-					<h3>Copy Write</h3>
-					<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
+					<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga perspiciatis laboriosam doloribus ex possimus? Alias amet deserunt illum mollitia, vero similique sint ipsam, commodi reprehenderit hic numquam eveniet exercitationem quasi? -->
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="bgcolor2 container-fluid" id="portfolio">
-		<h2>Check out my works</h2>
-		<div class="row portfolio">
-			<!-- <img src="./images/hotel1.png" alt="hotel service">
+	<section class="bgcolor1" id="services">
+		<div class="container">
+			<h2>my Services</h2>
+			<div class="row services">
+				<div class="col-lg-4 col-sm-6 services-block">
+					<div class="services-item">
+						<i class="fas fa-file-code"></i>
+						<h3>Development</h3>
+						<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 services-block">
+					<div class="services-item">
+						<i class="fas fa-poll"></i>
+						<h3>Marketing</h3>
+						<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 services-block">
+					<div class="services-item">
+						<i class="fas fa-question-circle"></i>
+						<h3>Support</h3>
+						<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 services-block">
+					<div class="services-item">
+						<i class="fas fa-snowboarding"></i>
+						<h3>Branding</h3>
+						<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 services-block">
+					<div class="services-item">
+						<i class="fas fa-pencil-ruler"></i>
+						<h3>Design</h3>
+						<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 services-block">
+					<div class="services-item">
+						<i class="fas fa-keyboard"></i>
+						<h3>Copy Write</h3>
+						<p>Lorem ipsum dolor text sit amet consectetur adipisicing elit. Tenetur nobis ping.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bgcolor2" id="portfolio">
+		<div class="container">
+			<h2>Check out my works</h2>
+			<div class="row portfolio">
+				<!-- <img src="./images/hotel1.png" alt="hotel service">
 			<img src="./images/music.png" alt="music stream">
 			<img src="./images/flight.png" alt="flight ticket service">
 			<img src="./images/shop2.png" alt="shop center">
 			<img src="./images/hotel2.png" alt="hotel service">
 			<img src="./images/shop1.png" alt="shope store"> -->
-			<div class="col-lg-4 col-sm-6 center">
-				<a href="#">
-					<div class="portfolio-item">
-						<div class="details">
-							<h4 class="title">Creative Art</h4>
-							<span class="term">Art, Creative</span>
+				<div class="col-lg-4 col-sm-6 center">
+					<a href="#">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Creative Art</h4>
+								<span class="term">Art, Creative</span>
+							</div>
+							<i class="fas fa-search-plus"></i>
+							<img src="./images/shop1.png" alt="shope store">
+							<div class="mask"></div>
 						</div>
-						<i class="fas fa-search-plus"></i>
-						<img src="./images/shop1.png" alt="shope store">
-						<div class="mask"></div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a href="#">
-					<div class="portfolio-item">
-						<div class="details">
-							<h4 class="title">Creative Art</h4>
-							<span class="term">Art, Creative</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a href="#">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Creative Art</h4>
+								<span class="term">Art, Creative</span>
+							</div>
+							<i class="fas fa-search-plus"></i>
+							<img src="./images/hotel2.png" alt="hotel service">
+							<div class="mask"></div>
 						</div>
-						<i class="fas fa-search-plus"></i>
-						<img src="./images/hotel2.png" alt="hotel service">
-						<div class="mask"></div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a href="#">
-					<div class="portfolio-item">
-						<div class="details">
-							<h4 class="title">Creative Art</h4>
-							<span class="term">Art, Creative</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a href="#">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Creative Art</h4>
+								<span class="term">Art, Creative</span>
+							</div>
+							<i class="fas fa-search-plus"></i>
+							<img src="./images/music.png" alt="music stream">
+							<div class="mask"></div>
 						</div>
-						<i class="fas fa-search-plus"></i>
-						<img src="./images/music.png" alt="music stream">
-						<div class="mask"></div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a href="#">
-					<div class="portfolio-item">
-						<div class="details">
-							<h4 class="title">Creative Art</h4>
-							<span class="term">Art, Creative</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a href="#">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Creative Art</h4>
+								<span class="term">Art, Creative</span>
+							</div>
+							<i class="fas fa-search-plus"></i>
+							<img src="./images/flight.png" alt="flight ticket service">
+							<div class="mask"></div>
 						</div>
-						<i class="fas fa-search-plus"></i>
-						<img src="./images/flight.png" alt="flight ticket service">
-						<div class="mask"></div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a href="#">
-					<div class="portfolio-item">
-						<div class="details">
-							<h4 class="title">Creative Art</h4>
-							<span class="term">Art, Creative</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a href="#">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Creative Art</h4>
+								<span class="term">Art, Creative</span>
+							</div>
+							<i class="fas fa-search-plus"></i>
+							<img src="./images/shop2.png" alt="shop center">
+							<div class="mask"></div>
 						</div>
-						<i class="fas fa-search-plus"></i>
-						<img src="./images/shop2.png" alt="shop center">
-						<div class="mask"></div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a href="#">
-					<div class="portfolio-item">
-						<div class="details">
-							<h4 class="title">Creative Art</h4>
-							<span class="term">Art, Creative</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a href="#">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Creative Art</h4>
+								<span class="term">Art, Creative</span>
+							</div>
+							<i class="fas fa-search-plus"></i>
+							<img src="./images/hotel1.png" alt="hotel service">
+							<div class="mask"></div>
 						</div>
-						<i class="fas fa-search-plus"></i>
-						<img src="./images/hotel1.png" alt="hotel service">
-						<div class="mask"></div>
-					</div>
-				</a>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="bgcolor1 container-fluid" id="contact">
-		<h2>Get in touch</h2>
-		<div class="row ">
-			<div class="col-md-4">
-				<div class="contact-info">
-					<i class="fas fa-phone-square-alt"></i>
-					<div class="details">
-						<h5>Phone</h5>
-						<p>(+992) 933-70-90-30</p>
+	<section class="bgcolor1" id="contact">
+		<div class="container">
+			<h2>Get in touch</h2>
+			<div class="row ">
+				<div class="col-md-4">
+					<div class="contact-info">
+						<i class="fas fa-phone-square-alt"></i>
+						<div class="details">
+							<h5>Phone</h5>
+							<p>(+992) 933-70-90-30</p>
+						</div>
+					</div>
+					<div class="contact-info">
+						<i class="fas fa-envelope"></i>
+						<div class="details">
+							<h5>Email</h5>
+							<p>silent-s@inbox.ru</p>
+						</div>
+					</div>
+					<div class="contact-info">
+						<i class="fas fa-map-marker-alt"></i>
+						<div class="details">
+							<h5>Location</h5>
+							<p>Tajikistan, Dushanbe</p>
+						</div>
 					</div>
 				</div>
-				<div class="contact-info">
-					<i class="fas fa-envelope"></i>
-					<div class="details">
-						<h5>Email</h5>
-						<p>silent-s@inbox.ru</p>
-					</div>
+				<div class="col-md-8">
+					<form action="index.html" class="contact-form">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Email address">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Subject">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<textarea class="form-control" name="" id="" rows=5"
+										placeholder="Message"></textarea>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-submit">
+							<i class="fas fa-paper-plane"></i>
+							Send Message
+						</button>
+					</form>
 				</div>
-				<div class="contact-info">
-					<i class="fas fa-map-marker-alt"></i>
-					<div class="details">
-						<h5>Location</h5>
-						<p>Tajikistan, Dushanbe</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-8">
-				<form action="index.html" class="contact-form">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Your name">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Email address">
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Subject">
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<textarea class="form-control" name="" id="" rows=5" placeholder="Message"></textarea>
-							</div>
-						</div>
-					</div>
-					<button class="btn btn-submit">
-						<i class="fas fa-paper-plane"></i>
-						Send Message
-					</button>
-				</form>
 			</div>
 		</div>
 	</section>
