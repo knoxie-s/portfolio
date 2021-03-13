@@ -604,6 +604,10 @@ textarea.form-control {
 		padding-bottom: 1rem;
 	} */
 
+	.about-info {
+		font-size: 1.1rem;
+	}
+
 
 /*-------------------------MY-SKILLS-------------------------*/ 
     
@@ -743,6 +747,7 @@ textarea.form-control {
 
 	.about-info {
 		text-align: center;
+		font-size: 1rem;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 	}
