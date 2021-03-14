@@ -1,5 +1,35 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 120%; }
+
+body {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #f4f4f4; }
+
+.heading-primary {
+  font-family: 'Francois One', sans-serif;
+  font-weight: 700;
+  color: #7a9add;
+  font-size: 3.2rem;
+  filter: drop-shadow(rgba(8, 56, 157, 0.95) 0px 0px 2.29233px) drop-shadow(rgba(30, 71, 157, 0.75) 0px 0px 11.4617px) drop-shadow(rgba(30, 71, 157, 0.44) 0px 0px 34.385px); }
+
 .header {
-  background-color: darkorange;
-  height: 10rem; }
-  .header__paragraph {
-    background-color: darkslategray; }
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(55, 51, 74, 0.7)), url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  position: relative; }
+  .header__intro-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .header__logo {
+    text-align: left; }
+    .header__logo a {
+      font-family: 'big shoulders display', cursive;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #7a9add;
+      filter: drop-shadow(rgba(8, 56, 157, 0.95) 0px 0px 2.29233px) drop-shadow(rgba(30, 71, 157, 0.75) 0px 0px 11.4617px) drop-shadow(rgba(30, 71, 157, 0.44) 0px 0px 34.385px); }

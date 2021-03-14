@@ -1,0 +1,13 @@
+body {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: $color-base;
+}
+
+.heading-primary {
+	font-family: 'Francois One', sans-serif;
+	font-weight: 700;
+	color: $color-primary;
+	font-size: 3.2rem;
+	filter: drop-shadow(rgba(8, 56, 157, 0.95) 0px 0px 2.29233px) drop-shadow(rgba(30, 71, 157, 0.75) 0px 0px 11.4617px) drop-shadow(rgba(30, 71, 157, 0.44) 0px 0px 34.385px);
+}

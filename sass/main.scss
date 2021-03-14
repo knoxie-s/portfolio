@@ -1,11 +1,11 @@
-// DEVELOPING PROJECT WITH SASS
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
-.header {
-	background-color: darkorange;
-	height: 10rem;
+@import 'base/base';
+@import 'base/typography';
 
-	&__paragraph {
-		background-color: darkslategray;
-	}
+@import 'layout/header';
+@import 'layout/navigation';
 
-}
+@import 'pages/home';
+
