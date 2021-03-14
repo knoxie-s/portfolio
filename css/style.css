@@ -62,11 +62,23 @@ body {
     margin-bottom: 0; }
   .navigation__item {
     float: left;
-    margin-left: 2rem; }
-  .navigation__link {
+    margin-left: 2rem;
+    position: relative; }
+  .navigation__link, .navigation__link:hover {
     font-size: 1rem;
     color: #D9D9D9;
     text-decoration: none; }
+  .navigation__item::after {
+    content: "";
+    background: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    transition: width .3s; }
+  .navigation__item:hover::after {
+    width: 100%; }
   .navigation__icon {
     height: 100%;
     position: relative; }
