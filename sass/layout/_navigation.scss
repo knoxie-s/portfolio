@@ -1,9 +1,15 @@
 .navigation {
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 2rem;
 	z-index: 100;
-	// background-color: black;
+
+	&--fixed {
+		position: fixed;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+		backdrop-filter: blur(8px);
+	}
 
 	&__logo {
 		text-align: left;
