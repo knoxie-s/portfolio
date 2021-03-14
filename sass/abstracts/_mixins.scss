@@ -12,3 +12,10 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
+
+@mixin heading-base-purple {
+	font-weight: 700;
+	color: $color-primary;
+	filter: drop-shadow(rgba(8, 56, 157, 0.95) 0px 0px 2.29233px) drop-shadow(rgba(30, 71, 157, 0.75) 0px 0px 11.4617px) drop-shadow(rgba(30, 71, 157, 0.44) 0px 0px 34.385px);
+	text-transform: uppercase;
+}

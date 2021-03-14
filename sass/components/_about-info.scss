@@ -1,0 +1,14 @@
+.about-info {
+	width: 100%;
+	// height: 17rem;
+	background-color: $color-bg-purple1;
+	text-align: left;
+	padding-top: 1.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+
+	&__lstkey {
+		color: $color-grey-dark;
+	}
+}
