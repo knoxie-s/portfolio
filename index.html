@@ -22,16 +22,16 @@
 
 <body>
 
-	<header class="header">
+	<div class="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="col-3">
-					<div class="header__logo">
+					<div class="navigation__logo">
 						<a href="#">DEPT</a>
 					</div>
 				</div>
 				<div class="col-md-9 d-none d-lg-block">
-					<nav class="navigation">
+					<nav class="navigation__nav">
 						<ul class="navigation__list">
 							<li class="navigation__item">
 								<a href="#" class="navigation__link">Home</a>
@@ -50,14 +50,38 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="col-9 d-lg-none">
-						<div class="header__nav-icon">
-							<i class="fas fa-bars"></i>
-						</div>
+				</div>
+				<div class="col-9 d-lg-none">
+					<div class="navigation__icon">
+						<i class="fas fa-bars"></i>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="sidebar">
+		<div class="sidebar__close-btn">
+			<i class="far fa-times-circle"></i>
+		</div>
+		<div class="sidebar__logo">
+			<img src="./images/3x4.png" alt="">
+			<h3>Suhail Ermatov</h3>
+			<h5>Web Developer</h5>
+		</div>
+		<nav class="sidebar__nav">
+			<ul>
+				<li><a class=" active" href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="sidebar__owner">
+			<span>2021 Dept Portfolio</span>
+		</div>
+	</div>
+	<header class="header">
 		<div class="header__intro-box">
 			<h1 class="heading-primary">I am developer</h1>
 		</div>
