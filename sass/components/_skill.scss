@@ -1,0 +1,35 @@
+.skill {
+	text-transform: uppercase;
+	color: $color-grey-dark;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+
+	&__item {
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+	}
+
+	&__details {
+		text-align: left;
+	}
+
+	&__progress {
+		float: right;
+		color: $color-grey-light;
+	}
+
+	&__bar {
+		background-color: $color-grey-darker;
+		height: .4rem;
+		margin-top: .7rem;
+		border-radius: 1rem;
+	}
+
+	&__bar-progress {
+		background-color: $color-black;
+		width: 0;
+		height: inherit;
+		border-radius: inherit;
+		transition: all 1.5s ease-in;
+	}
+}
