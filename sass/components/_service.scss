@@ -1,0 +1,29 @@
+.service {
+	width: 95%;
+	padding-top: 95%;
+	background-color: $color-bg-purple1;
+	margin-bottom: 2.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border-radius: .6rem;
+
+	&__details {
+		position: absolute;
+		left: 0;
+		top: 2rem;
+
+		i {
+			font-size: 2.5rem;
+			color: $color-icon-cyan;
+		}
+
+		h3 {
+			font-size: 1.6rem;
+		}
+
+		i, h3 {
+			margin-bottom: 1rem;
+		}
+	}
+}

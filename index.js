@@ -62,7 +62,7 @@ function addSkill() {
 
 	skillData.forEach(el => {
 		currSkill = skillHTML.replace("$name", el.name);
-		currSkill = currSkill.replace("$level", el.level);
+		currSkill = currSkill.replace("$level", el.level + '%');
 		mySkillsBox.insertAdjacentHTML("beforeend", currSkill);
 	})
 }

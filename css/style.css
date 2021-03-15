@@ -31,7 +31,7 @@ body {
   font-size: 1.8rem; }
 
 .u-margin-bottom-md {
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
 
 .about-info {
   width: 100%;
@@ -73,6 +73,27 @@ body {
     height: inherit;
     border-radius: inherit;
     transition: all 1.5s ease-in; }
+
+.service {
+  width: 95%;
+  padding-top: 95%;
+  background-color: #353247;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border-radius: .6rem; }
+  .service__details {
+    position: absolute;
+    left: 0;
+    top: 2rem; }
+    .service__details i {
+      font-size: 2.5rem;
+      color: #60c3d8; }
+    .service__details h3 {
+      font-size: 1.6rem; }
+    .service__details i, .service__details h3 {
+      margin-bottom: 1rem; }
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(55, 51, 74, 0.7)), url(../images/header-bg.jpg);
@@ -206,10 +227,14 @@ body {
 
 .section-about {
   padding-top: 1.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
   background-color: #1D1B27; }
 
 .section-my-skills {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
   background-color: #353247; }
+
+.section-services {
+  padding-top: 1.5rem;
+  background-color: #1D1B27; }
