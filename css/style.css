@@ -53,7 +53,8 @@ body {
   text-transform: uppercase;
   color: #b4b4b3;
   padding-left: 1.5rem;
-  padding-right: 1.5rem; }
+  padding-right: 1.5rem;
+  margin-bottom: 3rem; }
   .skill__item {
     font-size: 1.1rem;
     margin-bottom: 2rem; }
@@ -77,11 +78,11 @@ body {
 .service {
   width: 95%;
   padding-top: 95%;
-  background-color: #353247;
-  margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  background-color: #353247;
+  margin-bottom: 2.5rem;
   border-radius: .6rem; }
   .service__details {
     position: absolute;
@@ -225,6 +226,72 @@ body {
     bottom: 1em;
     font-size: 1em; }
 
+.portfolio {
+  width: 95%;
+  padding-top: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: 85%;
+  margin-bottom: 2.5rem;
+  border-radius: .6rem;
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer; }
+  .portfolio__details {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    z-index: 1; }
+    .portfolio__details h4 {
+      font-size: 1.3rem;
+      color: #d9d9d9;
+      transform: translateY(2rem);
+      opacity: 0;
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s; }
+    .portfolio__details span {
+      display: block;
+      font-size: 1rem;
+      opacity: 0;
+      transform: translateY(2.5rem);
+      color: #b4b4b3;
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s; }
+  .portfolio:hover .portfolio__details h4, .portfolio:hover .portfolio__details span {
+    transform: translateY(0);
+    opacity: 1; }
+  .portfolio__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+    transform: scale(1);
+    transition: all 0.3s; }
+  .portfolio:hover .portfolio__bg {
+    transform: scale(1.1); }
+  .portfolio__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s; }
+  .portfolio:hover .portfolio__mask {
+    opacity: 0.9; }
+  .portfolio i {
+    position: absolute;
+    z-index: 1;
+    color: #b4b4b3;
+    font-size: 1.5rem;
+    left: 2rem;
+    bottom: 2rem;
+    opacity: 0;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s; }
+  .portfolio:hover i {
+    opacity: 1; }
+
 .section-about {
   padding-top: 1.5rem;
   padding-bottom: 3.5rem;
@@ -238,3 +305,7 @@ body {
 .section-services {
   padding-top: 1.5rem;
   background-color: #1D1B27; }
+
+.section-portfolio {
+  padding-top: 1.5rem;
+  background-color: #353247; }

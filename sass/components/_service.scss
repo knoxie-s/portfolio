@@ -1,11 +1,8 @@
 .service {
-	width: 95%;
-	padding-top: 95%;
+	@include asp-rat-1-1-v1;
+
 	background-color: $color-bg-purple1;
 	margin-bottom: 2.5rem;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
 	border-radius: .6rem;
 
 	&__details {

@@ -1,0 +1,84 @@
+.portfolio {
+	@include asp-rat-1-1-v1;
+	padding-top: 85%;
+	margin-bottom: 2.5rem;
+	border-radius: .6rem;
+	text-align: left;
+	overflow: hidden;
+	cursor: pointer;
+
+	&__details {
+		position: absolute;
+		top: 1.5rem;
+		left: 2rem;
+		z-index: 1;
+
+		h4 {
+			font-size: 1.3rem;
+			color: $color-grey-light;
+			transform: translateY(2rem);
+			opacity: 0;
+			transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+		}
+
+		span {
+			display: block;
+			font-size: 1rem;
+			opacity: 0;
+			transform: translateY(2.5rem);
+			color: $color-grey-dark;
+			transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+		}
+	}
+
+	&:hover &__details {
+		h4, span {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		min-height: 100%;
+		transform: scale(1);
+		transition: all 0.3s;
+	}
+
+	&:hover &__bg {
+		transform: scale(1.1);
+	}
+
+	&__mask {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $color-black;
+		opacity: 0.3;
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s;
+	}
+
+	&:hover &__mask {
+		opacity: 0.9;
+	}
+
+	i {
+		position: absolute;
+		z-index: 1;
+		color: $color-grey-dark;
+		font-size: 1.5rem;
+		left: 2rem;
+		bottom: 2rem;
+		opacity: 0;
+		transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+	}
+
+	&:hover i {
+		opacity: 1;
+	}
+}
