@@ -5,5 +5,8 @@
 
 	&__copyright {
 		font-size: .9rem;
+		@include respond(sm) {
+			font-size: 1.2rem;
+		}
 	}
 }
