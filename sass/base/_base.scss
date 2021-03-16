@@ -1,6 +1,18 @@
 html {
 	scroll-behavior: smooth;
-	font-size: 120%;
+	font-size: 120%; //19px
+
+	@include respond(md) {
+		font-size: 100%; //16px
+	}
+
+	@include respond(sm) {
+		font-size: 87.5%; //14px;
+	}
+
+	@include respond(xs) {
+		font-size: 75%;
+	}
 }
 
 li {

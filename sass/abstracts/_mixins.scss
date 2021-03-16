@@ -27,3 +27,15 @@
 	margin-right: auto;
 	position: relative;
 }
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == md {
+		@media only screen and (max-width: 991px) { @content }; 
+	}
+	@if $breakpoint == sm {
+		@media only screen and (max-width: 767px) { @content }; 
+	}
+	@if $breakpoint == xs {
+		@media only screen and (max-width: 575px) { @content }; 
+	}
+}
