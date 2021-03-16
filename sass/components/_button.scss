@@ -1,0 +1,29 @@
+.btn {
+	i {
+		margin-right: .8rem;
+		font-size: 1.2rem;
+		color: $color-grey-light;
+	}
+
+	&--submit {
+		border-radius: 1.5rem;
+		padding: .5rem 2rem;
+		font-size: 1rem;
+		background-color: $color-bg-purple1;
+		color: $color-grey-dark;
+		transform: scale(1);
+		transform: translateY(0);
+		transition: all .2s ease-in;
+		margin-top: .4rem;
+
+		&:hover {
+			transform: translateY(-3px);
+			box-shadow: 0px 4px 6px #2e2d41;
+			background-color: #3f3c54;
+		}
+
+		&:active {
+			transform: scale(0.99);
+		}
+	}
+}

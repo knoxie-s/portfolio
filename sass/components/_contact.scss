@@ -1,0 +1,26 @@
+.contact {
+	&__info {
+		text-align: left;
+		margin-bottom: 3rem;
+
+		i {
+			float: left;
+			font-size: 2rem;
+			color: $color-contact-purple;
+		}
+	}
+
+	&__details {
+		margin-left: 4rem;
+		
+		h5 {
+			color: $color-grey-dark;
+			font-size: 1.2rem;
+		}
+
+		p {
+			color: $color-grey-light;
+			font-size: 1rem;
+		}
+	}
+}
