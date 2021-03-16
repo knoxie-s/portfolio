@@ -14,6 +14,10 @@
 	&__logo {
 		text-align: left;
 
+		@include respond(xs) {
+			margin-left: .5rem;
+		}
+
 		a {
 			font-family: 'big shoulders display', cursive;
 			font-size: 2.5rem;
@@ -68,6 +72,10 @@
 	&__icon {
 		height: 100%;
 		position: relative;
+
+		@include respond(xs) {
+			margin-right: .5rem;
+		}
 
 		i {
 			position: absolute;
