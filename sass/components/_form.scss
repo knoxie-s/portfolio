@@ -1,5 +1,8 @@
 .form {
 	text-align: left;
+	@include respond(sm) {
+		text-align: center;
+	}
 
 	&__group {
 		margin-bottom: 1.8rem;

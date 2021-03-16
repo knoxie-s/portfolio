@@ -15,6 +15,11 @@
 		width: 40%;
 	}
 
+	@include respond(sm) {
+		width: 45%;
+		font-size: 14px;
+	}
+
 	&--slide-right {
 		right: 0;
 		transition: all 0.4s ease 0s;
@@ -36,10 +41,15 @@
 
 	&__logo {
 		img {
-			width: 12em;
-			height: 12em;
+			width: 11em;
+			height: 11em;
 			border-radius: 50%;
 			margin-bottom: 2em;
+
+			@include respond(sm) {
+				width: 13em;
+				height: 13em;
+			}
 		}
 
 		h3 {

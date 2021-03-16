@@ -1,26 +1,56 @@
 .contact {
+
+	@include respond(sm) {
+		@include clearfix;
+	}
+
 	&__info {
 		text-align: left;
 		margin-bottom: 3rem;
+
+		@include respond(sm) {
+			text-align: center;
+			width: 33.3%;
+			margin-bottom: 2rem;
+			float: left;
+		}
 
 		i {
 			float: left;
 			font-size: 2rem;
 			color: $color-contact-purple;
+
+			@include respond(sm) {
+				float: none;
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+			}
 		}
 	}
 
 	&__details {
 		margin-left: 4rem;
+
+		@include respond(md) {
+			margin-left: 3rem;
+		}
+
+		@include respond(sm) {
+			margin-left: 0;
+		}
 		
 		h5 {
 			color: $color-grey-dark;
-			font-size: 1.2rem;
+			font-size: 1.3rem;
+			
+			@include respond(sm) {
+				font-size: 1.5rem;
+			}
 		}
 
 		p {
 			color: $color-grey-light;
-			font-size: 1rem;
+			font-size: 1.1rem;
 		}
 	}
 }

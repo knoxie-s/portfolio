@@ -16,6 +16,14 @@
 		transition: all .2s ease-in;
 		margin-top: .4rem;
 
+		@include respond(md) {
+			font-size: 1.3rem;
+		}
+
+		@include respond(sm) {
+			font-size: 1.5rem;
+		}
+
 		&:hover {
 			transform: translateY(-3px);
 			box-shadow: 0px 4px 6px #2e2d41;
