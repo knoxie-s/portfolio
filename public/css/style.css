@@ -56,6 +56,10 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem; }
+  .about-info::after {
+    content: "";
+    display: table;
+    clear: both; }
   @media only screen and (max-width: 767px) {
     .about-info {
       margin-top: 1rem;
@@ -236,33 +240,52 @@ body {
     color: #d9d9d9;
     font-size: 1.1rem; }
 
-.btn i {
-  margin-right: .8rem;
-  font-size: 1.2rem;
-  color: #d9d9d9; }
-
-.btn--submit {
+.btn-round {
+  margin-right: 1.5rem;
   border-radius: 1.5rem;
-  padding: .5rem 2rem;
+  padding: .3rem 1.2rem;
   font-size: 1rem;
-  background-color: #353247;
-  color: #b4b4b3;
   transform: scale(1);
   transform: translateY(0);
   transition: all .2s ease-in;
-  margin-top: .4rem; }
+  margin-top: .4rem;
+  cursor: pointer; }
+  .btn-round i {
+    margin-right: .3rem;
+    font-size: 1rem; }
+  .btn-round a {
+    text-decoration: none; }
   @media only screen and (max-width: 991px) {
-    .btn--submit {
+    .btn-round {
       font-size: 1.3rem; } }
   @media only screen and (max-width: 767px) {
-    .btn--submit {
+    .btn-round {
       font-size: 1.5rem; } }
-  .btn--submit:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 4px 6px #2e2d41;
-    background-color: #3f3c54; }
-  .btn--submit:active {
+  .btn-round:hover {
+    transform: translateY(-3px); }
+  .btn-round:active {
     transform: scale(0.99); }
+  .btn-round--purple {
+    background-color: #353247;
+    color: #b4b4b3; }
+    .btn-round--purple i {
+      color: #d9d9d9; }
+    .btn-round--purple:hover {
+      box-shadow: 0px 4px 6px #2e2d41;
+      background-color: #3f3c54; }
+  .btn-round--cyan {
+    background-color: #60C3D8;
+    float: left; }
+    .btn-round--cyan a {
+      color: black; }
+    .btn-round--cyan i {
+      color: black; }
+    .btn-round--cyan:hover {
+      background-color: #6BD8EF; }
+    @media only screen and (max-width: 767px) {
+      .btn-round--cyan {
+        float: none;
+        display: inline-block; } }
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(55, 51, 74, 0.7)), url(../images/header-bg.jpg);
