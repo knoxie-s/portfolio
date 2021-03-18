@@ -30,6 +30,7 @@
 	
 	&:hover {
 		transform: translateY(-3px);
+		// background-color: #3f3c54;
 	}
 	
 	&:active {
@@ -64,6 +65,7 @@
 		
 		&:hover {
 			background-color: $color-btn-cyan-light;
+			box-shadow: 0px 3px 2px $color-btn-cyan;
 		}
 
 		@include respond(sm) {

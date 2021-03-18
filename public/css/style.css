@@ -281,7 +281,8 @@ body {
     .btn-round--cyan i {
       color: black; }
     .btn-round--cyan:hover {
-      background-color: #6BD8EF; }
+      background-color: #6BD8EF;
+      box-shadow: 0px 3px 2px #60C3D8; }
     @media only screen and (max-width: 767px) {
       .btn-round--cyan {
         float: none;
