@@ -39,6 +39,14 @@ const skillData = [
 	{
 		"name": "EJS",
 		"level": 70 
+	},
+	{
+		"name": "Unix, Linux",
+		"level": 75 
+	},
+	{
+		"name": "Git, Gitflow",
+		"level": 75 
 	}
 ];
 
@@ -71,7 +79,7 @@ function addSkill() {
 function addSkillAnimation() {
 	var skillBar = document.querySelectorAll(".skill__bar-progress");
 
-	console.log("skill-test")
+	// console.log("skill-test")
 	mySkillsAnimated = true;
 	for (var i = 0; i < skillBar.length; i++) {
 		skillBar[i].style.width = skillData[i].level + '%';
