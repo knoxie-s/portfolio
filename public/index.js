@@ -1,12 +1,6 @@
-// DEVELOP BRANCH
-const nav_expand_btn = document.querySelector(".navigation__icon")
-const sb = document.querySelector(".sidebar")
-const sb_close_btn = document.querySelector(".sidebar i")
-const sb_lst_btn = document.querySelectorAll(".sidebar__nav a")
-var navbar = document.querySelector(".navigation");
-var navbar_ofstY = navbar.offsetTop;
-var mySkillsOffsetY = document.querySelector(".section-my-skills").offsetTop;
-var mySkillsAnimated = false;
+'use strict';
+
+// -------------------ADD SKILLS-------------------
 const skillData = [
 	{
 		"name": "C/C++",
@@ -64,37 +58,39 @@ const skillHTML = `<div class="col-sm-6">
 					</div>
 				</div>`
 
-// -------------------ADD SKILLS-------------------
-
-function addSkill() {
+const addSkill = function() {
 	const mySkillsBox = document.querySelector(".section-my-skills .row");
 
 	skillData.forEach(el => {
-		currSkill = skillHTML.replace("$name", el.name);
+		let currSkill = skillHTML.replace("$name", el.name);
 		currSkill = currSkill.replace("$level", el.level + '%');
 		mySkillsBox.insertAdjacentHTML("beforeend", currSkill);
 	})
 }
 
-function addSkillAnimation() {
-	var skillBar = document.querySelectorAll(".skill__bar-progress");
+let mySkillsAnimated = false;
+const addSkillAnimation = function() {
+	let skillBar = document.querySelectorAll(".skill__bar-progress");
 
 	// console.log("skill-test")
 	mySkillsAnimated = true;
-	for (var i = 0; i < skillBar.length; i++) {
+	for (let i = 0; i < skillBar.length; i++) {
 		skillBar[i].style.width = skillData[i].level + '%';
 	}
 }
 
 addSkill();
 
-
 // -------------------FIXED NAVBAR-------------------
+
+const navbar = document.querySelector(".navigation");
+const navbar_ofstY = navbar.offsetTop;
+const mySkillsOffsetY = document.querySelector(".section-my-skills").offsetTop;
 
 window.onscroll = function() {offsets()};
 
 function offsets() {
-	var windowOffsetY = window.pageYOffset;
+	let windowOffsetY = window.pageYOffset;
 
 	if (windowOffsetY >= navbar_ofstY) {
 		navbar.classList.add("navigation--fixed");
@@ -108,9 +104,14 @@ function offsets() {
 
 // -------------------SIDEBAR ANIMATIONS------------------- 
 
+const nav_expand_btn = document.querySelector(".navigation__icon");
+const sb = document.querySelector(".sidebar");
+const sb_close_btn = document.querySelector(".sidebar i");
+const sb_lst_btn = document.querySelectorAll(".sidebar__nav a");
+
 for (var i = 0; i < sb_lst_btn.length; i++) {
 	sb_lst_btn[i].addEventListener("click", (e) => {
-		var curr = document.querySelector(".sidebar__nav a.active")
+		const curr = document.querySelector(".sidebar__nav a.active")
 		curr.className = curr.className.replace(" active", "")
 		e.target.className += " active";	
 	})
