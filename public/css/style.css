@@ -11,6 +11,9 @@ html {
     html {
       font-size: 75%; } }
 
+body {
+  background-color: #1D1B27; }
+
 li {
   list-style: none; }
 
@@ -115,7 +118,7 @@ body {
     width: 0;
     height: inherit;
     border-radius: inherit;
-    transition: all 1.5s ease-in; }
+    transition: all 1.2s ease-in; }
 
 .service {
   width: 95%;
@@ -308,7 +311,8 @@ body {
   .navigation--fixed {
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.85); }
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px); }
   .navigation__logo {
     text-align: left; }
     @media only screen and (max-width: 575px) {
@@ -510,14 +514,21 @@ body {
     opacity: 1; }
 
 .footer {
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
   background-color: #353247; }
   .footer__copyright {
     font-size: .9rem; }
     @media only screen and (max-width: 767px) {
       .footer__copyright {
         font-size: 1.2rem; } }
+
+section {
+  transition: all 1s; }
+
+.section--hide {
+  opacity: 0;
+  transform: translateY(8rem); }
 
 .section-about {
   padding-top: 1.5rem;

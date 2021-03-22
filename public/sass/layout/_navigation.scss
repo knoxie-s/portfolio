@@ -3,12 +3,13 @@
 	position: absolute;
 	top: 2rem;
 	z-index: 100;
+	// background-color: rgba(0, 0, 0, 0.85);
 
 	&--fixed {
 		position: fixed;
 		top: 0;
 		background-color: rgba(0, 0, 0, 0.85);
-		// backdrop-filter: blur(8px);
+		backdrop-filter: blur(8px);
 	}
 
 	&__logo {

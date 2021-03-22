@@ -1,9 +1,17 @@
+section {
+	transition: all 1s;
+}
+
+.section--hide {
+	opacity: 0;
+	transform: translateY(8rem);
+}
+
 .section-about {
 	padding-top: 1.5rem;
 	padding-bottom: 3.5rem;
 	background-color: $color-bg-purple2;
 }
-
 
 .section-my-skills {
 	padding-top: 1.5rem;

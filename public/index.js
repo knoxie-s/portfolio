@@ -81,26 +81,72 @@ const addSkillAnimation = function() {
 
 addSkill();
 
+const aboutMe = document.querySelector(".section-my-skills");
+
+const runProgress = function(entries, observer) {
+	const [entry] = entries;
+
+	if (!entry.isIntersecting) return;
+	
+	addSkillAnimation();
+	observer.unobserve(entry.target);
+	console.log('test', entry);
+}
+
+const mySkillsObserver = new IntersectionObserver(runProgress, {
+	root: null,
+	threshold: 0.15
+})
+
+mySkillsObserver.observe(aboutMe)
+
+
 // -------------------FIXED NAVBAR-------------------
 
 const navbar = document.querySelector(".navigation");
-const navbar_ofstY = navbar.offsetTop;
-const mySkillsOffsetY = document.querySelector(".section-my-skills").offsetTop;
+const header = document.querySelector(".header");
+const navbarOffsetY =1 - (navbar.getBoundingClientRect().top) / header.getBoundingClientRect().height;
 
-window.onscroll = function() {offsets()};
+const fixedNavbar = function(entries) {
+	const [entry] = entries;
+	// console.log(entry);
 
-function offsets() {
-	let windowOffsetY = window.pageYOffset;
-
-	if (windowOffsetY >= navbar_ofstY) {
-		navbar.classList.add("navigation--fixed");
-	}
-	else {
+	if (entry.isIntersecting)
 		navbar.classList.remove("navigation--fixed");
-	}
-	if (windowOffsetY + window.innerHeight >= mySkillsOffsetY)
-		addSkillAnimation();
+	else
+		navbar.classList.add("navigation--fixed");
 }
+
+const headerObserver = new IntersectionObserver(fixedNavbar, {
+	root: null,
+	threshold: navbarOffsetY
+})
+
+headerObserver.observe(header);
+
+// -------------------SECTION ANIMATIONS------------------- 
+
+const sections = document.querySelectorAll("section");
+
+const fadeSection = function(entries, observer) {
+	const [entry] = entries;
+
+	if (!entry.isIntersecting) return;
+	
+	entry.target.classList.remove("section--hide");
+	observer.unobserve(entry.target);
+	console.log('test', entry);
+}
+
+const sectionObserver = new IntersectionObserver(fadeSection, {
+	root: null,
+	threshold: 0.15
+});
+
+sections.forEach(function(section) {
+	sectionObserver.observe(section);
+	section.classList.add("section--hide");
+})
 
 // -------------------SIDEBAR ANIMATIONS------------------- 
 
